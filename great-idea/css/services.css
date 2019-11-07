@@ -62,25 +62,28 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 body{
-	max-width: 876px;
-	margin: auto;
-	margin-top: 2%;
+    max-width: 880px;
+    box-sizing: content-box;
+    margin: auto;
 }
-#stickynav {
-	background-color: white;
-	width: 876px;
-	position: fixed;
-	display: flex;
-	justify-content: space-between;
+header {
+    margin: 1% 0;
+    padding: 1% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-ul{
-	display: flex;
-	width: 70%;
-	justify-content: space-around;
-	align-items: center;
+nav {
+    margin: 1% 0;
+}
+img {
+    margin: 1% 0;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 ul a, ul a:visited {
 	color: lightgray;
@@ -93,66 +96,40 @@ ul a:hover {
 ul a:active {
 	color: teal;
 }
+h1 {
+    font-size: 30px;
+}
+.top-para {
+    margin: 3% 0;
+}
+.body-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3% 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.body-section {
+    padding: 2%;
+    margin: 2% 0;
+    width: 47%;
+    border: 1px solid black;
+    background-color: #F4F3F4;
+}
+.learnmore-button {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 3%;
+    margin-top: 6%;
+    width: 40%;
+    flex-grow: 0;
+    text-align: center;
+    background-color: white;
+}
+.footer-text {
 
-header {
-	padding: 25px 0;
-	padding-top: 80px;
-	display: flex;
-	justify-content: space-evenly;
 }
-#left-header {
-	float: left;
-	margin: 50px 70px;
-}
-h1{
-	text-align: center;
-	font-size: 72px;
-}
-#get-started-button, #get-started-button:visited{
-	display: block;
-	text-align: center;
-	text-decoration: none;
-	color: black;
-	border: 1px solid;
-	width: 150px;
-	height: 30px;
-	line-height: 27px;
-	margin: auto;
-}
-#get-started-button:hover {
-	background-color: black;
-	color:white;
-}
-#get-started-button:active {
-	background-color: grey;
-}
-.lower-section{
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	padding: 20px 0;
-}
-.top-paragraphs {
-	display: flex;
-	justify-content: space-between;
-}
-.middle-img {
-	padding: inherit;
-}
-.bottom-paragraphs {
-	display: flex;
-	justify-content: space-between;
-}
-footer {
-	padding: 30px 0;
-}
-span {
-	display: block;
-	line-height: 18px;
-}
-.copyright{
-	font-size: 13px;
-	margin: 50px 41%;
-}
-.services-header {
-	padding-top: 50px;
+.footer-list {
+    flex-direction: column;
 }
