@@ -67,22 +67,22 @@ h1, h2, h3, h4, h5 {
 body{
 	max-width: 876px;
 	margin: auto;
+	margin-top: 2%;
 }
 #stickynav {
 	background-color: white;
-	border: 1px solid grey;
 	width: 876px;
 	position: fixed;
-	top: 0;
+	display: flex;
+	justify-content: space-between;
 }
 ul{
-	display: inline-block;
+	display: flex;
+	width: 70%;
+	justify-content: space-around;
+	align-items: center;
 }
 ul a, ul a:visited {
-	display: inline-block;
-	height: auto;
-	width: auto;
-	margin: 25px 30px;
 	color: lightgray;
 	text-decoration: none;
 	text-align: center;
@@ -93,20 +93,18 @@ ul a:hover {
 ul a:active {
 	color: teal;
 }
-.logo {
-	float: right;
-	margin-top: 14px;
-}
+
 header {
 	padding: 25px 0;
 	padding-top: 80px;
+	display: flex;
+	justify-content: space-evenly;
 }
 #left-header {
 	float: left;
 	margin: 50px 70px;
 }
 h1{
-	display: inline-block;
 	text-align: center;
 	font-size: 72px;
 }
@@ -128,26 +126,21 @@ h1{
 #get-started-button:active {
 	background-color: grey;
 }
-#headerimg {
-	display: inline-block;
-}
-#lower-section{
+.lower-section{
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	padding: 20px 0;
 }
-.split-paragraphs {
-	display: inline-block;
-	width: 47%;
-	margin: 1% 1%;
+.top-paragraphs {
+	display: flex;
+	justify-content: space-between;
 }
 .middle-img {
 	padding: inherit;
 }
-.triple-split-paragraphs {
-	display: inline-block;
-	width: 31%;
-	margin: 1% 1%;
+.bottom-paragraphs {
+	display: flex;
+	justify-content: space-between;
 }
 footer {
 	padding: 30px 0;
